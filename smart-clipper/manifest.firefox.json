@@ -1,0 +1,40 @@
+{
+	"host_permissions": [
+		"https://cdn.jsdelivr.net/*"
+	],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "smart-clipper@hexajs.dev",
+      "strict_min_version": "109.0"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "downloads"
+  ],
+  "commands": {
+    "start-ocr-clipping": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Start OCR clipping on the active tab"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "libs/tesseract/*",
+        "libs/tesseract/lang-data/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

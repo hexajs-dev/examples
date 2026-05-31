@@ -1,0 +1,72 @@
+name: Validate Examples
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  build-examples:
+    name: Build ${{ matrix.example }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - clip-volt
+          - hexa-grayscale
+          - hexa-grayscale-vue
+          - smart-clipper
+
+    steps:
+      - name: Checkout examples repo
+        uses: actions/checkout@v6
+        with:
+          path: examples-repo
+
+      - name: Checkout HexaJS source
+        uses: actions/checkout@v6
+        with:
+          repository: hexajs-dev/hexajs
+          path: hexajs
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 11.0.6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: hexajs/pnpm-lock.yaml
+
+      - name: Sync example into HexaJS workspace
+        shell: bash
+        run: |
+          rm -rf "hexajs/examples/${{ matrix.example }}"
+          mkdir -p "hexajs/examples/${{ matrix.example }}"
+          cp -R "examples-repo/${{ matrix.example }}/." "hexajs/examples/${{ matrix.example }}/"
+
+      - name: Install workspace dependencies
+        working-directory: hexajs
+        run: pnpm install --frozen-lockfile
+
+      - name: Build HexaJS packages
+        working-directory: hexajs
+        run: pnpm run build:packages
+
+      - name: Build example default target
+        working-directory: hexajs
+        run: pnpm --filter "./examples/${{ matrix.example }}" run build
+
+      - name: Build example production target
+        working-directory: hexajs
+        run: pnpm --filter "./examples/${{ matrix.example }}" run production:chrome
