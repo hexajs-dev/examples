@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@hexajs-dev/common':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/core':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/ports':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/ui':
         specifier: latest
-        version: 1.0.0(@hexajs-dev/common@1.0.0(typescript@5.9.3))(@hexajs-dev/core@1.0.0(typescript@5.9.3))(@hexajs-dev/ports@1.0.0(typescript@5.9.3))(@vitejs/plugin-vue@5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3)))(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))
+        version: 1.0.1(@hexajs-dev/common@1.0.1(typescript@5.9.3))(@hexajs-dev/core@1.0.1(typescript@5.9.3))(@hexajs-dev/ports@1.0.1(typescript@5.9.3))(@vitejs/plugin-vue@5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3)))(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))
       rxjs:
         specifier: ^7.8.2
         version: 7.8.2
@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@hexajs-dev/cli':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
         version: 5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))
@@ -221,33 +221,33 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hexajs-dev/cli@1.0.0':
-    resolution: {integrity: sha512-FFnLarI5srdShTlx98SG9HS8Zfbzb7GSXkY/r1EDYJ7fUi6Sdm3aBJjd2qdZ//rux4qDCZwrgBMlJvkobdMI4Q==}
+  '@hexajs-dev/cli@1.0.1':
+    resolution: {integrity: sha512-rTyprMJDTRCS/w3SDtYOLLvZBB4JiIy/34ooPinNEt3r8tz61ut/12BihSqas5L7cNp48tGujFLx7RKJE/PUGA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/common@1.0.0':
-    resolution: {integrity: sha512-C5VqT1Tx8M6hDFRvgOGSaSV+rAnErIXCWa4EKFP3zYTWcYDO2HZ/oONGiGv0ppri3bWXTrp49LYBNRO8AnX1BA==}
+  '@hexajs-dev/common@1.0.1':
+    resolution: {integrity: sha512-Uou4m24758Or5vEfPj8VsWxKQvXJZieCMiX8os35faAWMWjrgII8r3r75fAHqU1ZEAUcK4PopxRBWoEfmKQlrA==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/core@1.0.0':
-    resolution: {integrity: sha512-gHdKGjalzvLFh3+t+CxWvQsoNLUFHn3GodVq94JGx3e0YgsftEZsgIOhKOS1HXee1ysUPCbBYNGKKd6BPUQP1Q==}
+  '@hexajs-dev/core@1.0.1':
+    resolution: {integrity: sha512-ks+KKUB99T3i2TF0PqD3yzEE7SOUY58uNrbC97eXLU3oMYfuMLGRoDWXRT7wMcwkopNAKZNvOPzhwCYP5e92wg==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/ports@1.0.0':
-    resolution: {integrity: sha512-irD1wo2xwkYsOhuMgzIYEAOkaESQ5opbYDb4peDupkA+37M1l/uKmGToUTcXQJxu1p7VUSMtbCICBF9jIWKwUA==}
+  '@hexajs-dev/ports@1.0.1':
+    resolution: {integrity: sha512-y3whpPDFsQL0Z7cdmkY4e6M8ofaF6IG5JK4BoORfmlFGMb13TVyaMwDfkLLOoq6uf7NhENaQNq/DYYOJ6Hx++g==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/ui@1.0.0':
-    resolution: {integrity: sha512-ZqdM7pIRKnJalvMkNpeLUo955125pOrWK4ulCmS/GsxLvd6/5BBNjjTpWW3KNs0dUZAmaETVNX4ZHCYzyW2H4Q==}
+  '@hexajs-dev/ui@1.0.1':
+    resolution: {integrity: sha512-UwCghbIhckz3GyRGD87FLyhGHl/2+/n0tVYaJ8YsUA481D5ZbWbNdj5IXW0YWKtMSQnTpYpYpDoj42SumIOE6g==}
     peerDependencies:
-      '@hexajs-dev/common': ^1.0.0
-      '@hexajs-dev/core': ^1.0.0
-      '@hexajs-dev/ports': ^1.0.0
+      '@hexajs-dev/common': ^1.0.1
+      '@hexajs-dev/core': ^1.0.1
+      '@hexajs-dev/ports': ^1.0.1
       '@vitejs/plugin-react': '>=4.0.0'
       '@vitejs/plugin-vue': '>=5.0.0'
       vite: '>=5.0.0'
@@ -1114,9 +1114,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@hexajs-dev/cli@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/cli@1.0.1(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
       boxen: 8.0.1
       chalk: 5.6.2
       commander: 14.0.3
@@ -1143,28 +1143,28 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@hexajs-dev/common@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/common@1.0.1(typescript@5.9.3)':
     dependencies:
       reflect-metadata: 0.2.2
       typescript: 5.9.3
 
-  '@hexajs-dev/core@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/core@1.0.1(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/ports': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/ports': 1.0.1(typescript@5.9.3)
       rxjs: 7.8.2
       typescript: 5.9.3
 
-  '@hexajs-dev/ports@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/ports@1.0.1(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
       typescript: 5.9.3
 
-  '@hexajs-dev/ui@1.0.0(@hexajs-dev/common@1.0.0(typescript@5.9.3))(@hexajs-dev/core@1.0.0(typescript@5.9.3))(@hexajs-dev/ports@1.0.0(typescript@5.9.3))(@vitejs/plugin-vue@5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3)))(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))':
+  '@hexajs-dev/ui@1.0.1(@hexajs-dev/common@1.0.1(typescript@5.9.3))(@hexajs-dev/core@1.0.1(typescript@5.9.3))(@hexajs-dev/ports@1.0.1(typescript@5.9.3))(@vitejs/plugin-vue@5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3)))(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/core': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/ports': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/core': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/ports': 1.0.1(typescript@5.9.3)
       vite: 7.3.5
     optionalDependencies:
       '@vitejs/plugin-vue': 5.2.4(vite@7.3.5)(vue@3.5.35(typescript@5.9.3))

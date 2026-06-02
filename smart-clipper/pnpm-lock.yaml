@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@hexajs-dev/common':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/core':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/ports':
         specifier: latest
-        version: 1.0.0(typescript@5.9.3)
+        version: 1.0.1(typescript@5.9.3)
       '@hexajs-dev/ui':
         specifier: latest
-        version: 1.0.0(@hexajs-dev/common@1.0.0(typescript@5.9.3))(@hexajs-dev/core@1.0.0(typescript@5.9.3))(@hexajs-dev/ports@1.0.0(typescript@5.9.3))(@vitejs/plugin-react@4.7.0(vite@7.3.5(sass@1.100.0)))(vite@7.3.5(sass@1.100.0))
+        version: 1.0.1(@hexajs-dev/common@1.0.1(typescript@5.9.3))(@hexajs-dev/core@1.0.1(typescript@5.9.3))(@hexajs-dev/ports@1.0.1(typescript@5.9.3))(@vitejs/plugin-react@4.7.0(vite@7.3.5(sass@1.100.0)))(vite@7.3.5(sass@1.100.0))
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -32,7 +32,7 @@ importers:
     devDependencies:
       '@hexajs-dev/cli':
         specifier: latest
-        version: 1.0.0(sass@1.100.0)(typescript@5.9.3)
+        version: 1.0.1(sass@1.100.0)(typescript@5.9.3)
       '@types/react':
         specifier: ^18.3.1
         version: 18.3.30
@@ -296,33 +296,33 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hexajs-dev/cli@1.0.0':
-    resolution: {integrity: sha512-FFnLarI5srdShTlx98SG9HS8Zfbzb7GSXkY/r1EDYJ7fUi6Sdm3aBJjd2qdZ//rux4qDCZwrgBMlJvkobdMI4Q==}
+  '@hexajs-dev/cli@1.0.1':
+    resolution: {integrity: sha512-rTyprMJDTRCS/w3SDtYOLLvZBB4JiIy/34ooPinNEt3r8tz61ut/12BihSqas5L7cNp48tGujFLx7RKJE/PUGA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/common@1.0.0':
-    resolution: {integrity: sha512-C5VqT1Tx8M6hDFRvgOGSaSV+rAnErIXCWa4EKFP3zYTWcYDO2HZ/oONGiGv0ppri3bWXTrp49LYBNRO8AnX1BA==}
+  '@hexajs-dev/common@1.0.1':
+    resolution: {integrity: sha512-Uou4m24758Or5vEfPj8VsWxKQvXJZieCMiX8os35faAWMWjrgII8r3r75fAHqU1ZEAUcK4PopxRBWoEfmKQlrA==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/core@1.0.0':
-    resolution: {integrity: sha512-gHdKGjalzvLFh3+t+CxWvQsoNLUFHn3GodVq94JGx3e0YgsftEZsgIOhKOS1HXee1ysUPCbBYNGKKd6BPUQP1Q==}
+  '@hexajs-dev/core@1.0.1':
+    resolution: {integrity: sha512-ks+KKUB99T3i2TF0PqD3yzEE7SOUY58uNrbC97eXLU3oMYfuMLGRoDWXRT7wMcwkopNAKZNvOPzhwCYP5e92wg==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/ports@1.0.0':
-    resolution: {integrity: sha512-irD1wo2xwkYsOhuMgzIYEAOkaESQ5opbYDb4peDupkA+37M1l/uKmGToUTcXQJxu1p7VUSMtbCICBF9jIWKwUA==}
+  '@hexajs-dev/ports@1.0.1':
+    resolution: {integrity: sha512-y3whpPDFsQL0Z7cdmkY4e6M8ofaF6IG5JK4BoORfmlFGMb13TVyaMwDfkLLOoq6uf7NhENaQNq/DYYOJ6Hx++g==}
     peerDependencies:
       typescript: ^5.0.0
 
-  '@hexajs-dev/ui@1.0.0':
-    resolution: {integrity: sha512-ZqdM7pIRKnJalvMkNpeLUo955125pOrWK4ulCmS/GsxLvd6/5BBNjjTpWW3KNs0dUZAmaETVNX4ZHCYzyW2H4Q==}
+  '@hexajs-dev/ui@1.0.1':
+    resolution: {integrity: sha512-UwCghbIhckz3GyRGD87FLyhGHl/2+/n0tVYaJ8YsUA481D5ZbWbNdj5IXW0YWKtMSQnTpYpYpDoj42SumIOE6g==}
     peerDependencies:
-      '@hexajs-dev/common': ^1.0.0
-      '@hexajs-dev/core': ^1.0.0
-      '@hexajs-dev/ports': ^1.0.0
+      '@hexajs-dev/common': ^1.0.1
+      '@hexajs-dev/core': ^1.0.1
+      '@hexajs-dev/ports': ^1.0.1
       '@vitejs/plugin-react': '>=4.0.0'
       '@vitejs/plugin-vue': '>=5.0.0'
       vite: '>=5.0.0'
@@ -864,8 +864,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  electron-to-chromium@1.5.365:
-    resolution: {integrity: sha512-xfip4u1QF1s+URFqpA6N+OeFpDGpN7VJz1f3MO3bVL0QYBjpGiZ5/Of7kugvM+o8TTqmanUlviHN3c8M9vYWCw==}
+  electron-to-chromium@1.5.366:
+    resolution: {integrity: sha512-OlRuhb688YTCzzU3gXPLn6nGyd+F+53INE1qaKKlu6kETErE8FYsyDh0XqXEU+uBRn0MpCzz2vfNwORhkap8qg==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -1423,9 +1423,9 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@hexajs-dev/cli@1.0.0(sass@1.100.0)(typescript@5.9.3)':
+  '@hexajs-dev/cli@1.0.1(sass@1.100.0)(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
       boxen: 8.0.1
       chalk: 5.6.2
       commander: 14.0.3
@@ -1452,28 +1452,28 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@hexajs-dev/common@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/common@1.0.1(typescript@5.9.3)':
     dependencies:
       reflect-metadata: 0.2.2
       typescript: 5.9.3
 
-  '@hexajs-dev/core@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/core@1.0.1(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/ports': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/ports': 1.0.1(typescript@5.9.3)
       rxjs: 7.8.2
       typescript: 5.9.3
 
-  '@hexajs-dev/ports@1.0.0(typescript@5.9.3)':
+  '@hexajs-dev/ports@1.0.1(typescript@5.9.3)':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
       typescript: 5.9.3
 
-  '@hexajs-dev/ui@1.0.0(@hexajs-dev/common@1.0.0(typescript@5.9.3))(@hexajs-dev/core@1.0.0(typescript@5.9.3))(@hexajs-dev/ports@1.0.0(typescript@5.9.3))(@vitejs/plugin-react@4.7.0(vite@7.3.5(sass@1.100.0)))(vite@7.3.5(sass@1.100.0))':
+  '@hexajs-dev/ui@1.0.1(@hexajs-dev/common@1.0.1(typescript@5.9.3))(@hexajs-dev/core@1.0.1(typescript@5.9.3))(@hexajs-dev/ports@1.0.1(typescript@5.9.3))(@vitejs/plugin-react@4.7.0(vite@7.3.5(sass@1.100.0)))(vite@7.3.5(sass@1.100.0))':
     dependencies:
-      '@hexajs-dev/common': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/core': 1.0.0(typescript@5.9.3)
-      '@hexajs-dev/ports': 1.0.0(typescript@5.9.3)
+      '@hexajs-dev/common': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/core': 1.0.1(typescript@5.9.3)
+      '@hexajs-dev/ports': 1.0.1(typescript@5.9.3)
       vite: 7.3.5(sass@1.100.0)
     optionalDependencies:
       '@vitejs/plugin-react': 4.7.0(vite@7.3.5(sass@1.100.0))
@@ -1822,7 +1822,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.33
       caniuse-lite: 1.0.30001793
-      electron-to-chromium: 1.5.365
+      electron-to-chromium: 1.5.366
       node-releases: 2.0.47
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -1856,7 +1856,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  electron-to-chromium@1.5.365: {}
+  electron-to-chromium@1.5.366: {}
 
   emoji-regex@10.6.0: {}
 
