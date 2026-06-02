@@ -27,14 +27,6 @@ jobs:
     steps:
       - name: Checkout examples repo
         uses: actions/checkout@v6
-        with:
-          path: examples-repo
-
-      - name: Checkout HexaJS source
-        uses: actions/checkout@v6
-        with:
-          repository: hexajs-dev/hexajs
-          path: hexajs
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
@@ -46,27 +38,16 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          cache-dependency-path: hexajs/pnpm-lock.yaml
+          cache-dependency-path: ${{ matrix.example }}/pnpm-lock.yaml
 
-      - name: Sync example into HexaJS workspace
-        shell: bash
-        run: |
-          rm -rf "hexajs/examples/${{ matrix.example }}"
-          mkdir -p "hexajs/examples/${{ matrix.example }}"
-          cp -R "examples-repo/${{ matrix.example }}/." "hexajs/examples/${{ matrix.example }}/"
-
-      - name: Install workspace dependencies
-        working-directory: hexajs
+      - name: Install dependencies
+        working-directory: ${{ matrix.example }}
         run: pnpm install --frozen-lockfile
 
-      - name: Build HexaJS packages
-        working-directory: hexajs
-        run: pnpm run build:packages
-
       - name: Build example default target
-        working-directory: hexajs
-        run: pnpm --filter "./examples/${{ matrix.example }}" run build
+        working-directory: ${{ matrix.example }}
+        run: pnpm run build
 
       - name: Build example production target
-        working-directory: hexajs
-        run: pnpm --filter "./examples/${{ matrix.example }}" run production:chrome
+        working-directory: ${{ matrix.example }}
+        run: pnpm run production:chrome

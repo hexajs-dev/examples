@@ -1,0 +1,7 @@
+{
+  "name": "examples",
+  "private": true,
+  "scripts": {
+    "install:all": "pnpm --dir clip-volt install && pnpm --dir hexa-grayscale install && pnpm --dir hexa-grayscale-vue install && pnpm --dir smart-clipper install"
+  }
+}
